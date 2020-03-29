@@ -3,7 +3,7 @@ GlobalFont.Locale = GetLocale()
 
 -- define font files here
 GlobalFont.DefaultFont = [[Interface\AddOns\GlobalFont_Template\SampleFont.ttf]]
-GlobalFont.ChatFont = [[Interface\AddOns\GlobalFont_Template\SampleFont.ttf]]
+GlobalFont.ChatFont = [[Interface\AddOns\GlobalFont_Template\SampleChat.ttf]]
 
 -- you can change how to determine font size here
 function GlobalFont.CalculateFontSize(sizeWestern, sizeChinese)
