@@ -2,10 +2,10 @@ The code is licensed under the MIT License.
 
 Copyright © 2020 Cyano Hao.
 
-The sample font (`SampleFont.ttf`) is licensed under
+The sample fonts (`SampleFont.ttf` and `SampleChat.ttf`) are licensed under
 the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
-Copyright © 2007 Google Corporation.
+Copyright 2011 Google Inc. All Rights Reserved.
 
 # The MIT License
 
