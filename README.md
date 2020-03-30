@@ -21,7 +21,7 @@ We take “Global Font (Std W4)” for example in this section.
 
 (x for required; o for recommended.)
 
-Global Font’s Std editions cover Basic Latin, Extended Latin, Cyrillic, CJK ideograph and Hangul; Pro editions cover all above.
+Global Font’s Std editions cover basic Latin, extended Latin, Cyrillic, CJK ideograph and Hangul; Pro editions cover all above.
 
 ### Addon name
 
@@ -51,33 +51,33 @@ GlobalFont.ChatFont = [[Interface\AddOns\GlobalFont_Template\SampleChat.ttf]]
 e.g.
 ```lua
 if GlobalFont.Locale == "zhCN" then
-	GlobalFont.DefaultFont = [[Interface\AddOns\GlobalFont_StdW4\WarSans-CN-Medium.otf]]
-	GlobalFont.ChatFont = [[Interface\AddOns\GlobalFont_StdW4\WarSans-CN-CondensedMedium.otf]]
+    GlobalFont.DefaultFont = [[Interface\AddOns\GlobalFont_StdW4\WarSans-CN-Medium.otf]]
+    GlobalFont.ChatFont = [[Interface\AddOns\GlobalFont_StdW4\WarSans-CN-CondensedMedium.otf]]
 elseif GlobalFont.Locale == "zhTW" then
-	GlobalFont.DefaultFont = [[Interface\AddOns\GlobalFont_StdW4\WarSans-TW-Medium.otf]]
-	GlobalFont.ChatFont = [[Interface\AddOns\GlobalFont_StdW4\WarSans-TW-CondensedMedium.otf]]
+    GlobalFont.DefaultFont = [[Interface\AddOns\GlobalFont_StdW4\WarSans-TW-Medium.otf]]
+    GlobalFont.ChatFont = [[Interface\AddOns\GlobalFont_StdW4\WarSans-TW-CondensedMedium.otf]]
 else
-	-- enUS, esMX, ptBR, deDE, esES, frFR, itIT, ruRU, koKR
-	GlobalFont.DefaultFont = [[Interface\AddOns\GlobalFont_StdW4\WarUI-CL-ExtendedMedium.otf]]
-	GlobalFont.ChatFont = [[Interface\AddOns\GlobalFont_StdW4\WarUI-CL-CondensedMedium.otf]]
+    -- enUS, esMX, ptBR, deDE, esES, frFR, itIT, ruRU, koKR
+    GlobalFont.DefaultFont = [[Interface\AddOns\GlobalFont_StdW4\WarUI-CL-ExtendedMedium.otf]]
+    GlobalFont.ChatFont = [[Interface\AddOns\GlobalFont_StdW4\WarUI-CL-CondensedMedium.otf]]
 end
 ```
 
 In `FixedSize.xml`, modify these lines:
 ```xml
 <!DOCTYPE Ui [
-	<!ENTITY DefaultFont_Western "Interface\AddOns\GlobalFont_Template\SampleFont.ttf">
-	<!ENTITY DefaultFont_zhCN "Interface\AddOns\GlobalFont_Template\SampleFont.ttf">
-	<!ENTITY DefaultFont_zhTW "Interface\AddOns\GlobalFont_Template\SampleFont.ttf">
+    <!ENTITY DefaultFont_Western "Interface\AddOns\GlobalFont_Template\SampleFont.ttf">
+    <!ENTITY DefaultFont_zhCN "Interface\AddOns\GlobalFont_Template\SampleFont.ttf">
+    <!ENTITY DefaultFont_zhTW "Interface\AddOns\GlobalFont_Template\SampleFont.ttf">
 ]>
 ```
 
 e.g.
 ```xml
 <!DOCTYPE Ui [
-	<!ENTITY DefaultFont_Western "Interface\AddOns\GlobalFont_StdW4\WarUI-CL-ExtendedMedium.otf">
-	<!ENTITY DefaultFont_zhCN "Interface\AddOns\GlobalFont_StdW4\WarSans-CN-Medium.otf">
-	<!ENTITY DefaultFont_zhTW "Interface\AddOns\GlobalFont_StdW4\WarSans-TW-Medium.otf">
+    <!ENTITY DefaultFont_Western "Interface\AddOns\GlobalFont_StdW4\WarUI-CL-ExtendedMedium.otf">
+    <!ENTITY DefaultFont_zhCN "Interface\AddOns\GlobalFont_StdW4\WarSans-CN-Medium.otf">
+    <!ENTITY DefaultFont_zhTW "Interface\AddOns\GlobalFont_StdW4\WarSans-TW-Medium.otf">
 ]>
 ```
 
@@ -128,22 +128,22 @@ e.g.
 In `Core.lua`, modify `GlobalFont.CalculateFontSize` function.
 ```lua
 function GlobalFont.CalculateFontSize(sizeWestern, sizeChinese)
-	-- write your font size determining logic here
+    -- write your font size determining logic here
 end
 ```
 
 e.g.
 ```lua
 function GlobalFont.CalculateFontSize(sizeWestern, sizeChinese)
-	if GlobalFont.Locale == "zhCN" or GlobalFont.Locale == "zhTW" then
-		if sizeWestern >= sizeChinese then
-			return sizeWestern
-		else
-			return sqrt(sizeWestern * sizeChinese)
-		end
-	else
-		return sizeWestern
-	end
+    if GlobalFont.Locale == "zhCN" or GlobalFont.Locale == "zhTW" then
+        if sizeWestern >= sizeChinese then
+            return sizeWestern
+        else
+            return sqrt(sizeWestern * sizeChinese)
+        end
+    else
+        return sizeWestern
+    end
 end
 ```
 
