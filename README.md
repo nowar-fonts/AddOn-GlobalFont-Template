@@ -2,6 +2,18 @@
 
 Unified font for all supported languages.
 
+## Compatibility
+
+| Category | Compatible? |
+| -------- | ----------- |
+| WoW’s default UI | ✔ |
+| Addons that use standard fonts | ✔ |
+| Addons that use built-in font objects | ✔ |
+| Addons that use LibSharedMedia’s font storage | ✔ * |
+| Addons that have hard-coded font | ✘ |
+
+* Need configuration — select “Global Font - Default” or “Global Font - Chat”.
+
 ## Customisation
 
 This section describes how to create an addon with your favorite font.
