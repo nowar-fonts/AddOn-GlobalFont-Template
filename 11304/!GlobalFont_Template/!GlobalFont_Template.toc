@@ -1,6 +1,6 @@
 ## Interface: 11304
 
-## Title: Global Font (Template)
+## Title: __REPLACE_IN_BUILD__ADDON_NAME__
 ## Notes: Unified font for all supported languages.
 
 ## Version: 1.13.4-r2

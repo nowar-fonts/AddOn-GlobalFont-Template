@@ -1,21 +1,23 @@
 GlobalFont = {}
 GlobalFont.Locale = GetLocale()
 
--- define font files here
-GlobalFont.DefaultFont = [[Interface\AddOns\!GlobalFont_Template\SampleFont.ttf]]
-GlobalFont.ChatFont = [[Interface\AddOns\!GlobalFont_Template\SampleChat.ttf]]
+if GlobalFont.Locale == "zhCN" then
+	GlobalFont.DefaultFont = [[__REPLACE_IN_BUILD__DEFAULT_FONT_ZHCN__]]
+	GlobalFont.ChatFont = [[__REPLACE_IN_BUILD__CHAT_FONT_ZHCN__]]
+elseif GlobalFont.Locale == "zhTW" then
+	GlobalFont.DefaultFont = [[__REPLACE_IN_BUILD__DEFAULT_FONT_ZHTW__]]
+	GlobalFont.ChatFont = [[__REPLACE_IN_BUILD__CHAT_FONT_ZHTW__]]
+else
+	GlobalFont.DefaultFont = [[__REPLACE_IN_BUILD__DEFAULT_FONT_WESTERN__]]
+	GlobalFont.ChatFont = [[__REPLACE_IN_BUILD__CHAT_FONT_WESTERN__]]
+end
 
--- you can change how to determine font size here
 function GlobalFont.CalculateFontSize(sizeWestern, sizeChinese)
 	if GlobalFont.Locale == "zhCN" or GlobalFont.Locale == "zhTW" then
 		if sizeWestern >= sizeChinese then
-			-- sometimes it’s too small to read
-			-- i.e. the item list in new auction house frame
 			return sizeWestern
 		else
-			-- sometimes it’s too large to display
-			-- i.e. player lvl in who list frame
-			return (sizeWestern + sizeChinese) / 2
+			return (sizeWestern * sizeChinese) ^ 0.5
 		end
 	else
 		return sizeWestern

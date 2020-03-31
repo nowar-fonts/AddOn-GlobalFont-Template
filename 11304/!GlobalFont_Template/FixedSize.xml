@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- define font files here -->
 <!DOCTYPE Ui [
-	<!ENTITY DefaultFont_Western "Interface\AddOns\!GlobalFont_Template\SampleFont.ttf">
-	<!ENTITY DefaultFont_zhCN "Interface\AddOns\!GlobalFont_Template\SampleFont.ttf">
-	<!ENTITY DefaultFont_zhTW "Interface\AddOns\!GlobalFont_Template\SampleFont.ttf">
+	<!ENTITY DefaultFont_Western "__REPLACE_IN_BUILD__DEFAULT_FONT_WESTERN__">
+	<!ENTITY DefaultFont_zhCN "__REPLACE_IN_BUILD__DEFAULT_FONT_ZHCN__">
+	<!ENTITY DefaultFont_zhTW "__REPLACE_IN_BUILD__DEFAULT_FONT_ZHTW__">
 ]>
 
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/

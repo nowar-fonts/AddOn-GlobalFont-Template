@@ -1,6 +1,6 @@
 ## Interface: 80300
 
-## Title: Global Font (Template)
+## Title: __REPLACE_IN_BUILD__ADDON_NAME__
 ## Notes: Unified font for all supported languages.
 
 ## Version: 8.3.0-r3
