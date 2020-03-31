@@ -25,17 +25,17 @@ Global Font’s Std editions cover basic Latin, extended Latin, Cyrillic, CJK id
 
 ### Addon name
 
-Rename `GlobalFont_Template` (directory) and `GlobalFont_Template.toc`.
+Rename `!GlobalFont_Template` (directory) and `!GlobalFont_Template.toc`.
 
 e.g.
 ```
-GlobalFont_StdW4 ─┬─ GlobalFont_StdW4.toc
-                  └─ ...
+!GlobalFont_StdW4 ─┬─ !GlobalFont_StdW4.toc
+                   └─ ...
 ```
 
 In your renamed toc file, modify `Title` and other information.
 
-e.g. in `GlobalFont_StdW4.toc`,
+e.g. in `!GlobalFont_StdW4.toc`,
 ```
 ## Title: Global Font (Std W4)
 ```
@@ -44,40 +44,40 @@ e.g. in `GlobalFont_StdW4.toc`,
 
 In `Core.lua`, modify these lines:
 ```lua
-GlobalFont.DefaultFont = [[Interface\AddOns\GlobalFont_Template\SampleFont.ttf]]
-GlobalFont.ChatFont = [[Interface\AddOns\GlobalFont_Template\SampleChat.ttf]]
+GlobalFont.DefaultFont = [[Interface\AddOns\!GlobalFont_Template\SampleFont.ttf]]
+GlobalFont.ChatFont = [[Interface\AddOns\!GlobalFont_Template\SampleChat.ttf]]
 ```
 
 e.g.
 ```lua
 if GlobalFont.Locale == "zhCN" then
-    GlobalFont.DefaultFont = [[Interface\AddOns\GlobalFont_StdW4\WarSans-CN-Medium.otf]]
-    GlobalFont.ChatFont = [[Interface\AddOns\GlobalFont_StdW4\WarSans-CN-CondensedMedium.otf]]
+    GlobalFont.DefaultFont = [[Interface\AddOns\!GlobalFont_StdW4\WarSans-CN-Medium.otf]]
+    GlobalFont.ChatFont = [[Interface\AddOns\!GlobalFont_StdW4\WarSans-CN-CondensedMedium.otf]]
 elseif GlobalFont.Locale == "zhTW" then
-    GlobalFont.DefaultFont = [[Interface\AddOns\GlobalFont_StdW4\WarSans-TW-Medium.otf]]
-    GlobalFont.ChatFont = [[Interface\AddOns\GlobalFont_StdW4\WarSans-TW-CondensedMedium.otf]]
+    GlobalFont.DefaultFont = [[Interface\AddOns\!GlobalFont_StdW4\WarSans-TW-Medium.otf]]
+    GlobalFont.ChatFont = [[Interface\AddOns\!GlobalFont_StdW4\WarSans-TW-CondensedMedium.otf]]
 else
     -- enUS, esMX, ptBR, deDE, esES, frFR, itIT, ruRU, koKR
-    GlobalFont.DefaultFont = [[Interface\AddOns\GlobalFont_StdW4\WarUI-CL-ExtendedMedium.otf]]
-    GlobalFont.ChatFont = [[Interface\AddOns\GlobalFont_StdW4\WarUI-CL-CondensedMedium.otf]]
+    GlobalFont.DefaultFont = [[Interface\AddOns\!GlobalFont_StdW4\WarUI-CL-ExtendedMedium.otf]]
+    GlobalFont.ChatFont = [[Interface\AddOns\!GlobalFont_StdW4\WarUI-CL-CondensedMedium.otf]]
 end
 ```
 
 In `FixedSize.xml`, modify these lines:
 ```xml
 <!DOCTYPE Ui [
-    <!ENTITY DefaultFont_Western "Interface\AddOns\GlobalFont_Template\SampleFont.ttf">
-    <!ENTITY DefaultFont_zhCN "Interface\AddOns\GlobalFont_Template\SampleFont.ttf">
-    <!ENTITY DefaultFont_zhTW "Interface\AddOns\GlobalFont_Template\SampleFont.ttf">
+    <!ENTITY DefaultFont_Western "Interface\AddOns\!GlobalFont_Template\SampleFont.ttf">
+    <!ENTITY DefaultFont_zhCN "Interface\AddOns\!GlobalFont_Template\SampleFont.ttf">
+    <!ENTITY DefaultFont_zhTW "Interface\AddOns\!GlobalFont_Template\SampleFont.ttf">
 ]>
 ```
 
 e.g.
 ```xml
 <!DOCTYPE Ui [
-    <!ENTITY DefaultFont_Western "Interface\AddOns\GlobalFont_StdW4\WarUI-CL-ExtendedMedium.otf">
-    <!ENTITY DefaultFont_zhCN "Interface\AddOns\GlobalFont_StdW4\WarSans-CN-Medium.otf">
-    <!ENTITY DefaultFont_zhTW "Interface\AddOns\GlobalFont_StdW4\WarSans-TW-Medium.otf">
+    <!ENTITY DefaultFont_Western "Interface\AddOns\!GlobalFont_StdW4\WarUI-CL-ExtendedMedium.otf">
+    <!ENTITY DefaultFont_zhCN "Interface\AddOns\!GlobalFont_StdW4\WarSans-CN-Medium.otf">
+    <!ENTITY DefaultFont_zhTW "Interface\AddOns\!GlobalFont_StdW4\WarSans-TW-Medium.otf">
 ]>
 ```
 
