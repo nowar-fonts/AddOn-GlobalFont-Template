@@ -40,6 +40,7 @@ do
 			cp font/$e/$sans-TW-$cond.otf build/$i/\!GlobalFont_$e$w/
 
 			# escaped twice by bash and sed
+			sed -i "s/__REPLACE_IN_BUILD__EDITION_ID__/$e$w/" build/$i/\!GlobalFont_$e$w/FixedSize.xml
 			sed -i "s/__REPLACE_IN_BUILD__DEFAULT_FONT_WESTERN__/Interface\\\\AddOns\\\\!GlobalFont_$e$w\\\\$ui-CL-$ext.otf/" build/$i/\!GlobalFont_$e$w/Core.lua build/$i/\!GlobalFont_$e$w/FixedSize.xml
 			sed -i "s/__REPLACE_IN_BUILD__CHAT_FONT_WESTERN__/Interface\\\\AddOns\\\\!GlobalFont_$e$w\\\\$ui-CL-$cond.otf/" build/$i/\!GlobalFont_$e$w/Core.lua
 			sed -i "s/__REPLACE_IN_BUILD__DEFAULT_FONT_ZHCN__/Interface\\\\AddOns\\\\!GlobalFont_$e$w\\\\$sans-CN-$normal.otf/" build/$i/\!GlobalFont_$e$w/Core.lua build/$i/\!GlobalFont_$e$w/FixedSize.xml
