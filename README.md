@@ -52,6 +52,22 @@ e.g. in `!GlobalFont_StdW4.toc`,
 ## Title: Global Font (Std W4)
 ```
 
+In `FixedSize.xml`, modify edition ID:
+```xml
+<!DOCTYPE Ui [
+    <!ENTITY EditionId "Template">
+    ...
+]>
+```
+
+e.g.
+```xml
+<!DOCTYPE Ui [
+    <!ENTITY EditionId "StdW4">
+    ...
+]>
+```
+
 ### Font files
 
 In `Core.lua`, modify these lines:
@@ -78,6 +94,7 @@ end
 In `FixedSize.xml`, modify these lines:
 ```xml
 <!DOCTYPE Ui [
+    ...
     <!ENTITY DefaultFont_Western "Interface\AddOns\!GlobalFont_Template\SampleFont.ttf">
     <!ENTITY DefaultFont_zhCN "Interface\AddOns\!GlobalFont_Template\SampleFont.ttf">
     <!ENTITY DefaultFont_zhTW "Interface\AddOns\!GlobalFont_Template\SampleFont.ttf">
@@ -87,6 +104,7 @@ In `FixedSize.xml`, modify these lines:
 e.g.
 ```xml
 <!DOCTYPE Ui [
+    ...
     <!ENTITY DefaultFont_Western "Interface\AddOns\!GlobalFont_StdW4\WarUI-CL-ExtendedMedium.otf">
     <!ENTITY DefaultFont_zhCN "Interface\AddOns\!GlobalFont_StdW4\WarSans-CN-Medium.otf">
     <!ENTITY DefaultFont_zhTW "Interface\AddOns\!GlobalFont_StdW4\WarSans-TW-Medium.otf">
@@ -151,7 +169,7 @@ function GlobalFont.CalculateFontSize(sizeWestern, sizeChinese)
         if sizeWestern >= sizeChinese then
             return sizeWestern
         else
-            return sqrt(sizeWestern * sizeChinese)
+            return (sizeWestern * sizeChinese) ^ 0.5
         end
     else
         return sizeWestern
