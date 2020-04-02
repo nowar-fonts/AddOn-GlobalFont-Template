@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE Ui [
+	<!ENTITY EditionId "__REPLACE_IN_BUILD__EDITION_ID__">
 	<!ENTITY DefaultFont_Western "__REPLACE_IN_BUILD__DEFAULT_FONT_WESTERN__">
 	<!ENTITY DefaultFont_zhCN "__REPLACE_IN_BUILD__DEFAULT_FONT_ZHCN__">
 	<!ENTITY DefaultFont_zhTW "__REPLACE_IN_BUILD__DEFAULT_FONT_ZHTW__">
@@ -9,7 +10,7 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
 
-	<FontFamily name="GlobalFont_FixedSizeWrapper_SystemFont_World" virtual="true">
+	<FontFamily name="GlobalFont_&EditionId;_FixedSizeWrapper_SystemFont_World" virtual="true">
 		<Member alphabet="roman">
 			<Font font="&DefaultFont_Western;" height="64" filter="true" fixedSize="true">
 				<Shadow>
@@ -61,9 +62,9 @@
 			</Font>
 		</Member>
 	</FontFamily>
-	<Font name="SystemFont_World" inherits="GlobalFont_FixedSizeWrapper_SystemFont_World" virtual="true"/>
+	<Font name="SystemFont_World" inherits="GlobalFont_&EditionId;_FixedSizeWrapper_SystemFont_World" virtual="true"/>
 
-	<FontFamily name="GlobalFont_FixedSizeWrapper_SystemFont_World_ThickOutline" virtual="true">
+	<FontFamily name="GlobalFont_&EditionId;_FixedSizeWrapper_SystemFont_World_ThickOutline" virtual="true">
 		<Member alphabet="roman">
 			<Font font="&DefaultFont_Western;" height="64" filter="true" fixedSize="true" outline="THICK">
 				<Shadow>
@@ -115,9 +116,9 @@
 			</Font>
 		</Member>
 	</FontFamily>
-	<Font name="SystemFont_World_ThickOutline" inherits="GlobalFont_FixedSizeWrapper_SystemFont_World_ThickOutline" virtual="true"/>
+	<Font name="SystemFont_World_ThickOutline" inherits="GlobalFont_&EditionId;_FixedSizeWrapper_SystemFont_World_ThickOutline" virtual="true"/>
 
-	<FontFamily name="GlobalFont_FixedSizeWrapper_SystemFont_NamePlateFixed" virtual="true">
+	<FontFamily name="GlobalFont_&EditionId;_FixedSizeWrapper_SystemFont_NamePlateFixed" virtual="true">
 		<Member alphabet="roman">
 			<Font font="&DefaultFont_Western;" height="14" filter="false" fixedSize="true">
 				<Shadow>
@@ -169,9 +170,9 @@
 			</Font>
 		</Member>
 	</FontFamily>
-	<Font name="SystemFont_NamePlateFixed" inherits="GlobalFont_FixedSizeWrapper_SystemFont_NamePlateFixed" virtual="true"/>
+	<Font name="SystemFont_NamePlateFixed" inherits="GlobalFont_&EditionId;_FixedSizeWrapper_SystemFont_NamePlateFixed" virtual="true"/>
 
-	<FontFamily name="GlobalFont_FixedSizeWrapper_SystemFont_LargeNamePlateFixed" virtual="true">
+	<FontFamily name="GlobalFont_&EditionId;_FixedSizeWrapper_SystemFont_LargeNamePlateFixed" virtual="true">
 		<Member alphabet="roman">
 			<Font font="&DefaultFont_Western;" height="20" filter="false" fixedSize="true">
 				<Shadow>
@@ -223,9 +224,9 @@
 			</Font>
 		</Member>
 	</FontFamily>
-	<Font name="SystemFont_LargeNamePlateFixed" inherits="GlobalFont_FixedSizeWrapper_SystemFont_LargeNamePlateFixed" virtual="true"/>
+	<Font name="SystemFont_LargeNamePlateFixed" inherits="GlobalFont_&EditionId;_FixedSizeWrapper_SystemFont_LargeNamePlateFixed" virtual="true"/>
 
-	<FontFamily name="GlobalFont_FixedSizeWrapper_SystemFont_NamePlateCastBar" virtual="true">
+	<FontFamily name="GlobalFont_&EditionId;_FixedSizeWrapper_SystemFont_NamePlateCastBar" virtual="true">
 		<Member alphabet="roman">
 			<Font font="&DefaultFont_Western;" height="10" filter="false" fixedSize="true" outline="NORMAL">
 				<Shadow>
@@ -277,6 +278,6 @@
 			</Font>
 		</Member>
 	</FontFamily>
-	<Font name="SystemFont_NamePlateCastBar" inherits="GlobalFont_FixedSizeWrapper_SystemFont_NamePlateCastBar" virtual="true"/>
+	<Font name="SystemFont_NamePlateCastBar" inherits="GlobalFont_&EditionId;_FixedSizeWrapper_SystemFont_NamePlateCastBar" virtual="true"/>
 
 </Ui>
