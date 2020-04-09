@@ -1,0 +1,17 @@
+## Interface: 90001
+
+## Title: Global Font (Template)
+## Notes: Unified font for all supported languages.
+
+## Version: 9.0.1-alpha1
+## Author: Cyano Hao
+## X-Category: Miscellaneous
+## X-License: MIT
+
+## OptionalDeps: LibSharedMedia-3.0
+
+Core.lua
+FixedSize.xml
+
+LibStub.lua
+SharedMedia.lua
