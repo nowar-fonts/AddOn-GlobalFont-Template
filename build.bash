@@ -1,4 +1,4 @@
-interface=(11304 80300)
+interface=(11304 80300 90001)
 
 edition=(Std Pro)
 declare -A familySans=([Std]=WarSans [Pro]=NowarSans)
