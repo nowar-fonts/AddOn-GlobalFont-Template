@@ -1,4 +1,4 @@
-GlobalFont = {}
+local _, GlobalFont = ...
 GlobalFont.Locale = GetLocale()
 
 -- define font files here

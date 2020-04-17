@@ -3,7 +3,7 @@
 ## Title: Global Font (Template)
 ## Notes: Unified font for all supported languages.
 
-## Version: 8.3.0-r4
+## Version: 8.3.0-r5
 ## Author: Cyano Hao
 ## X-Category: Miscellaneous
 ## X-License: MIT

@@ -1,3 +1,4 @@
+local _, GlobalFont = ...
 local LSM3 = LibStub("LibSharedMedia-3.0", true)
 
 function GlobalFont.SharedMediaRegister(this, event, ...)
