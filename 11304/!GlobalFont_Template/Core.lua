@@ -1,4 +1,4 @@
-GlobalFont = {}
+local _, GlobalFont = ...
 GlobalFont.Locale = GetLocale()
 
 if GlobalFont.Locale == "zhCN" then

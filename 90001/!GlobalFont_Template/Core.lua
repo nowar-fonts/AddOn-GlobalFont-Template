@@ -1,4 +1,4 @@
-GlobalFont = {}
+local _, GlobalFont = ...
 GlobalFont.Locale = GetLocale()
 
 if GlobalFont.Locale == "zhCN" then
@@ -65,6 +65,7 @@ function GlobalFont.Register(this, event, ...)
 	if NumberFont_Shadow_Tiny then NumberFont_Shadow_Tiny:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(10, 10)) end
 	if NumberFont_Shadow_Small then NumberFont_Shadow_Small:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(12, 12)) end
 	if NumberFont_Shadow_Med then NumberFont_Shadow_Med:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(14, 14)) end
+	if NumberFont_Shadow_Large then NumberFont_Shadow_Large:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(20, 20)) end
 	if Tooltip_Med then Tooltip_Med:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(12, 13)) end
 	if Tooltip_Small then Tooltip_Small:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(10, 12)) end
 	if Game30Font then Game30Font:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(30, 30)) end
