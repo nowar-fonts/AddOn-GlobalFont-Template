@@ -3,7 +3,7 @@
 ## Title: __REPLACE_IN_BUILD__ADDON_NAME__
 ## Notes: Unified font for all supported languages.
 
-## Version: 9.0.1-alpha2
+## Version: 9.0.1-alpha3
 ## Author: Cyano Hao
 ## X-Category: Miscellaneous
 ## X-License: MIT
