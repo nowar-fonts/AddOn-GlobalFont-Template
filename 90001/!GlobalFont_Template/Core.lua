@@ -54,6 +54,7 @@ function GlobalFont.Register(this, event, ...)
 	if SystemFont_Shadow_Outline_Huge3 then SystemFont_Shadow_Outline_Huge3:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(25, 25), "OUTLINE") end
 	if SystemFont_Shadow_Huge4 then SystemFont_Shadow_Huge4:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(27, 27)) end
 	if SystemFont_Shadow_Outline_Huge4 then SystemFont_Shadow_Outline_Huge4:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(27, 27), "OUTLINE") end
+	if SystemFont_Outline_Huge2 then SystemFont_Outline_Huge2:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(22, 22), "OUTLINE") end
 	if SystemFont_Shadow_Outline_Huge2 then SystemFont_Shadow_Outline_Huge2:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(22, 22), "OUTLINE") end
 	if SystemFont_Med1 then SystemFont_Med1:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(12, 13)) end
 	if SystemFont_WTF2 then SystemFont_WTF2:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(36, 64)) end
