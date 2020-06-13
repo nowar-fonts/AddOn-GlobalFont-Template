@@ -1,9 +1,9 @@
-## Interface: 11304
+## Interface: 11305
 
 ## Title: __REPLACE_IN_BUILD__ADDON_NAME__
 ## Notes: Unified font for all supported languages.
 
-## Version: 1.13.4-r4
+## Version: 1.13.5-r1
 ## Author: Cyano Hao
 ## X-Category: Miscellaneous
 ## X-License: MIT
