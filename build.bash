@@ -19,6 +19,7 @@ mkdir -p out/zip
 v=$(cat $1/\!GlobalFont_Template/\!GlobalFont_Template.toc | grep "## Version" | cut -d\  -f3)
 for e in ${edition[@]}
 do
+	fontver=$(cat font/$e/version)
 	family=${familyName[$e]}
 	for w in ${weight[@]}
 	do
@@ -29,6 +30,7 @@ do
 		mkdir -p build/$1/\!GlobalFont_$e$w
 		cp $1/\!GlobalFont_Template/\!GlobalFont_Template.toc build/$1/\!GlobalFont_$e$w/\!GlobalFont_$e$w.toc
 		sed -i "s/__REPLACE_IN_BUILD__ADDON_NAME__/Global Font ($e $w)/" build/$1/\!GlobalFont_$e$w/\!GlobalFont_$e$w.toc
+		sed -i "s/Version: $v/Version: $v+$fontver/" build/$1/\!GlobalFont_$e$w/\!GlobalFont_$e$w.toc
 
 		cp $1/\!GlobalFont_Template/{Core.lua,FixedSize.xml,LibStub.lua,SharedMedia.lua} build/$1/\!GlobalFont_$e$w/
 
@@ -49,8 +51,8 @@ do
 		sed -i "s/__REPLACE_IN_BUILD__CHAT_FONT_ZHTW__/Interface\\\\AddOns\\\\!GlobalFont_$e$w\\\\$family-TW-$cond.otf/" build/$1/\!GlobalFont_$e$w/Core.lua
 
 		cd build/$1
-		7z a -t7z -m0=LZMA:d=32m:fb=273 -ms=on ../../out/7z/GlobalFont_$e${w}_$v.7z \!GlobalFont_$e$w &
-		7z a -tzip -mm=Deflate:fb=258:pass=3 -mcu=on ../../out/zip/GlobalFont_$e${w}_$v.zip \!GlobalFont_$e$w &
+		7z a -t7z -m0=LZMA:d=32m:fb=273 -ms=on ../../out/7z/GlobalFont_$e${w}_$v+$fontver.7z \!GlobalFont_$e$w &
+		7z a -tzip -mm=Deflate:fb=258:pass=3 -mcu=on ../../out/zip/GlobalFont_$e${w}_$v+$fontver.zip \!GlobalFont_$e$w &
 		cd ../..
 	done
 done
