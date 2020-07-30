@@ -42,6 +42,7 @@ function GlobalFont.Register(this, event, ...)
 	if SystemFont_Med2 then SystemFont_Med2:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(13, 14)) end
 	if SystemFont_Med3 then SystemFont_Med3:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(14, 13)) end
 	if SystemFont_Shadow_Med3 then SystemFont_Shadow_Med3:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(14, 14)) end
+	if SystemFont_Shadow_Med3_Outline then SystemFont_Shadow_Med3_Outline:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(14, 14), "OUTLINE") end
 	if QuestFont_Large then QuestFont_Large:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(15, 15)) end
 	if QuestFont_Huge then QuestFont_Huge:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(18, 17)) end
 	if SystemFont_Large then SystemFont_Large:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(16, 13)) end
