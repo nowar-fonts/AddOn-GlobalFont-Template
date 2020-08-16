@@ -45,11 +45,13 @@ function GlobalFont.Register(this, event, ...)
 	if SystemFont_Shadow_Med3_Outline then SystemFont_Shadow_Med3_Outline:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(14, 14), "OUTLINE") end
 	if QuestFont_Large then QuestFont_Large:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(15, 15)) end
 	if QuestFont_Huge then QuestFont_Huge:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(18, 17)) end
+	if QuestFont_39 then QuestFont_39:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(39, 38)) end
 	if SystemFont_Large then SystemFont_Large:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(16, 13)) end
 	if SystemFont_Shadow_Large_Outline then SystemFont_Shadow_Large_Outline:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(16, 17), "OUTLINE") end
 	if SystemFont_Shadow_Med2 then SystemFont_Shadow_Med2:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(14, 16)) end
 	if SystemFont_Shadow_Large then SystemFont_Shadow_Large:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(16, 17)) end
 	if SystemFont_Shadow_Large2 then SystemFont_Shadow_Large2:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(18, 19)) end
+	if Game17Font_Shadow then Game17Font_Shadow:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(17, 17)) end
 	if SystemFont_Shadow_Huge1 then SystemFont_Shadow_Huge1:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(20, 20)) end
 	if SystemFont_Huge2 then SystemFont_Huge2:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(24, 24)) end
 	if SystemFont_Shadow_Huge2 then SystemFont_Shadow_Huge2:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(24, 24), "OUTLINE") end
@@ -71,6 +73,10 @@ function GlobalFont.Register(this, event, ...)
 	if Tooltip_Med then Tooltip_Med:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(12, 13)) end
 	if Tooltip_Small then Tooltip_Small:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(10, 12)) end
 	if Game30Font then Game30Font:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(30, 30)) end
+	if Game40Font_Shadow2 then Game40Font_Shadow2:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(40, 40)) end
+	if Game52Font_Shadow2 then Game52Font_Shadow2:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(52, 52)) end
+	if Game58Font_Shadow2 then Game58Font_Shadow2:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(58, 58)) end
+	if Game69Font_Shadow2 then Game69Font_Shadow2:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(69, 69)) end
 	if Game72Font then Game72Font:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(72, 72)) end
 	if Game72Font_Shadow then Game72Font_Shadow:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(72, 72)) end
 	if SystemFont_Outline_Small then SystemFont_Outline_Small:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(10, 12), "OUTLINE") end
