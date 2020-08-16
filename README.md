@@ -169,7 +169,8 @@ function GlobalFont.CalculateFontSize(sizeWestern, sizeChinese)
         if sizeWestern >= sizeChinese then
             return sizeWestern
         else
-            return (sizeWestern * sizeChinese) ^ 0.5
+            -- root-mean-square (RMS)
+            return ((sizeWestern ^ 2 + sizeChinese ^ 2) / 2) ^ 0.5
         end
     else
         return sizeWestern
