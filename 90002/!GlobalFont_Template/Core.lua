@@ -43,10 +43,12 @@ function GlobalFont.Register(this, event, ...)
 	if SystemFont_Shadow_Med3_Outline then SystemFont_Shadow_Med3_Outline:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(14, 14), "OUTLINE") end
 	if QuestFont_Large then QuestFont_Large:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(15, 15)) end
 	if QuestFont_Huge then QuestFont_Huge:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(18, 17)) end
+	if QuestFont_30 then QuestFont_30:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(30, 29)) end
 	if QuestFont_39 then QuestFont_39:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(39, 38)) end
 	if SystemFont_Large then SystemFont_Large:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(16, 13)) end
 	if SystemFont_Shadow_Large_Outline then SystemFont_Shadow_Large_Outline:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(16, 17), "OUTLINE") end
 	if SystemFont_Shadow_Med2 then SystemFont_Shadow_Med2:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(14, 16)) end
+	if SystemFont_Shadow_Med2_Outline then SystemFont_Shadow_Med2_Outline:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(14, 16), "OUTLINE") end
 	if SystemFont_Shadow_Large then SystemFont_Shadow_Large:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(16, 17)) end
 	if SystemFont_Shadow_Large2 then SystemFont_Shadow_Large2:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(18, 19)) end
 	if Game17Font_Shadow then Game17Font_Shadow:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(17, 17)) end
@@ -97,6 +99,7 @@ function GlobalFont.Register(this, event, ...)
 	if Number13Font then Number13Font:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(13, 12)) end
 	if PriceFont then PriceFont:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(14, 14)) end
 	if Number15Font then Number15Font:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(15, 14)) end
+	if Number16Font then Number16Font:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(16, 15)) end
 	if Number18Font then Number18Font:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(18, 17)) end
 	if NumberFont_Normal_Med then NumberFont_Normal_Med:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(14, 12)) end
 	if NumberFont_Outline_Med then NumberFont_Outline_Med:SetFont(GlobalFont.ChatFont, GlobalFont.CalculateFontSize(14, 12), "OUTLINE") end
@@ -119,6 +122,7 @@ function GlobalFont.Register(this, event, ...)
 	if Game27Font then Game27Font:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(27, 27)) end
 	if Game32Font then Game32Font:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(32, 32)) end
 	if Game36Font then Game36Font:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(36, 36)) end
+	if Game40Font then Game40Font:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(40, 40)) end
 	if Game42Font then Game42Font:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(42, 42)) end
 	if Game46Font then Game46Font:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(46, 46)) end
 	if Game48Font then Game48Font:SetFont(GlobalFont.DefaultFont, GlobalFont.CalculateFontSize(48, 48)) end
