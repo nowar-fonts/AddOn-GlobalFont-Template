@@ -22,16 +22,17 @@ We take “Global Font (Std W4)” for example in this section.
 
 ### Character set recommendation
 
-| Character set  | PTR | NA | EU | CN and TW | KR | Global |
-| -------------- | --- | -- | -- | --------- | -- | ------ |
-| Basic Latin    | x   | x  | x  | x         | x  | x      |
-| Extended Latin | x   | x  | x  | x         | x  | x      |
-| Cyrillic       | x   | o  | x  | o         | o  | x      |
-| CJK ideograph  | x   | o  |    | x         | o  | x      |
-| CJK extended   |     |    |    | o         |    | o      |
-| Hangul         | x   | o  |    | o         | x  | x      |
+| Character set  | PTR | NA | EU | CN | TW | KR | Global |
+| -------------- | --- | -- | -- | -- | -- | -- | ------ |
+| Basic Latin    | x   | x  | x  | x  | x  | x  | x      |
+| Extended Latin | x   | x  | x  | x  | x  | x  | x      |
+| Cyrillic       | x   | o  | x  | o  | o  | o  | x      |
+| CJK ideograph  | x   | o  |    | x  | x  | o¹ | x      |
+| CJK extended   |     |    |    | o  | o  |    | o      |
+| Hangul         | x   | o  |    |    | o¹ | x  | x      |
 
-(x for required; o for recommended.)
+0. x for required; o for recommended.
+1. TW and KR share the same Battle.net region where Btag friends may have their names in CJK ideograph or Hangul.
 
 Global Font’s Std editions cover basic Latin, extended Latin, Cyrillic, CJK ideograph and Hangul; Pro editions cover all above.
 
